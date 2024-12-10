@@ -1,0 +1,10 @@
+name = "my-worker"
+type = "javascript" # or "typescript", "webpack", "rust" depending on your worker type
+
+account_id = "166e111fb22eaac014d70de84b85a4c3"
+workers_dev = true
+route = ""
+zone_id = ""
+
+# Specify your entry-point script
+main = "src/index.js"  # Update this to match the location of your Worker script
