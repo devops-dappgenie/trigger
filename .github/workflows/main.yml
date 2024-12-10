@@ -1,3 +1,5 @@
+name: Deploy
+
 on:
   push:
     branches:
@@ -9,8 +11,6 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v4
-      - name: Debug Environment
-        run: ls -R
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
