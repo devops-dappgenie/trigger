@@ -13,24 +13,4 @@
     "wrangler": "^3.60.3",
     "vitest": "2.1.8"
   }
-  {
-  "name": "my-first-worker",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "dev": "nuxt",
-    "deploy": "wrangler deploy",
-    "test": "vitest"
-  },
-  "dependencies": {
-    "nuxt": "^3.0.0"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "wrangler": "^3.60.3",
-    "vitest": "2.1.8"
-  }
-}
 }
