@@ -5,12 +5,11 @@
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
-    "start": "wrangler dev",
     "test": "vitest"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "wrangler": "^3.60.3",
+    "wrangler": "^3.95.0",  // Updated version of wrangler
     "vitest": "2.1.8"
   }
 }
