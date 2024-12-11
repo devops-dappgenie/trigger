@@ -1,4 +1,4 @@
-name: Deploy Nuxt to Cloudflare Workers
+name: Deploy to Cloudflare Workers
 
 on:
   push:
@@ -8,26 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy Nuxt to Cloudflare Workers
+    name: Deploy
     steps:
-      # Step 1: Checkout the repository
       - uses: actions/checkout@v4
-
-      # Step 2: Install Node.js dependencies
       - name: Install Dependencies
         run: npm install
-
-      # Step 3: Build the Nuxt application
-      - name: Build Nuxt Application
-        run: npm run build
-
-      # Step 4: Install Wrangler globally
-      - name: Install Wrangler
-        run: npm install -g wrangler
-
-      # Step 5: Deploy to Cloudflare Workers
       - name: Deploy to Cloudflare Workers
-        run: npm run deploy
+        run: npx wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
