@@ -3,15 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build-site",  // Add a build script for your static site
-    "deploy": "wrangler pages publish ./dist",  // Assuming ./dist is your build folder
-    "dev": "wrangler dev",  // Keep the dev server for local development
-    "test": "vitest"  // Keep testing script if needed
+    "build": "npm run build-site",  
+    "deploy": "wrangler pages publish ./dist",  
+    "dev": "wrangler dev",  
+    "test": "vitest"  //
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",  // Keep if you need testing in Pages
-    "wrangler": "^3.95.0",  // Wrangler is still needed for deployment
-    "vitest": "2.1.8",  // Keep testing library
-    "your-static-site-builder": "^1.0.0"  // Replace this with your static site generator, e.g., React, Vue, etc.
+    "@cloudflare/vitest-pool-workers": "^0.5.2", 
+    "wrangler": "^3.95.0", 
+    "vitest": "2.1.8",  
+    "your-static-site-builder": "^1.0.0"  
   }
 }
