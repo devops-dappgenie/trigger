@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-  repository_dispatch:
-    types: [deploy-trigger] 
-
+  workflow_dispatch: 
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,6 +17,7 @@ jobs:
         run: npx wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
 
 
 
