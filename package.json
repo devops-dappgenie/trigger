@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build-site",  
+    "build": "vite build",  
     "deploy": "wrangler pages publish ./dist",  
-    "dev": "wrangler dev",  
-    "test": "vitest"  
+    "dev": "vite",  
+    "test": "vitest" 
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2", 
-    "wrangler": "^3.95.0", 
-    "vitest": "2.1.8",  
-    "your-static-site-builder": "^1.0.0"  
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "wrangler": "^3.95.0",
+    "vitest": "2.1.8",
+    "vite": "^4.0.0", 
+    "vue": "^3.0.0"  
   }
 }
